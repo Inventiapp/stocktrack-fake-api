@@ -24,11 +24,9 @@ server.use((req, res, next) => {
 
 server.use(middlewares);
 
-// Configurar reglas de autenticación
 const rules = auth.rewriter(require('./routes.json'));
 server.use(rules);
 
-// Integrar autenticación
 server.use(auth);
 
 server.use(router);
@@ -37,8 +35,6 @@ const PORT = process.env.PORT || 8080;
 const HOST = process.env.HOST || '0.0.0.0';
 
 server.listen(PORT, HOST, () => {
-  console.log(`🚀 API Server running on http://${HOST}:${PORT}`);
-  console.log(`\n📡 Endpoints disponibles:`);
   console.log(`   - Providers: http://${HOST}:${PORT}/providers`);
   console.log(`   - Categories: http://${HOST}:${PORT}/categories`);
   console.log(`   - Products: http://${HOST}:${PORT}/products`);
@@ -48,6 +44,6 @@ server.listen(PORT, HOST, () => {
   console.log(`   - Kits: http://${HOST}:${PORT}/kits`);
   console.log(`   - Users: http://${HOST}:${PORT}/users`);
   console.log(`   - Current User: http://${HOST}:${PORT}/currentUser`);
-  console.log(`\n🔐 Auth endpoints: /register, /login`);
+  console.log(` Auth endpoints: /register, /login`);
 });
 

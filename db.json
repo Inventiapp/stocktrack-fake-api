@@ -551,11 +551,11 @@
   ],
   "users": [
     {
-      "email": "test@company.com",
-      "password": "$2a$10$IHizLPIZ7Oc6f1ij094N/eI6n5IyqYTVdWW6kynozk9kJ3xVAqHBm",
-      "name": "Usuario de Prueba",
-      "role": "Vendedor",
-      "status": "Activo",
+      "email": "admin@admin.com",
+      "password": "$2a$10$0W53OJMxWkbGteRaNzMf.u3sMSBqRMr86BDmZ70ongyTht9Ry4et.",
+      "role": "admin",
+      "name": "admin",
+      "status": "activo",
       "id": 1
     }
   ]

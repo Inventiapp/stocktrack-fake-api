@@ -1,0 +1,25 @@
+{
+  "name": "stocktrack-api",
+  "version": "1.0.0",
+  "description": "API REST para StockTrack con json-server y json-server-auth",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "json-server",
+    "api",
+    "rest",
+    "stocktrack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "json-server-auth": "^2.1.0"
+  },
+  "overrides": {
+    "jsonwebtoken": "^9.0.0"
+  }
+}

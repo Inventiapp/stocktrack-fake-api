@@ -553,7 +553,7 @@
     {
       "email": "admin@admin.com",
       "password": "$2a$10$0W53OJMxWkbGteRaNzMf.u3sMSBqRMr86BDmZ70ongyTht9Ry4et.",
-      "role": "admin",
+      "role": "Administrador",
       "name": "admin",
       "status": "activo",
       "id": 1
